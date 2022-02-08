@@ -324,6 +324,9 @@ window.addEventListener("load", () => {
     arrowLeft.addEventListener("click", () => changeImgModal("left"));
     arrowRight.addEventListener("click", () => changeImgModal("right"));
 
+    document.getElementById('top').addEventListener('click', ()=>{
+        window.scrollTo(0,0)
+    })
 
     themeDark();
     changeTheme(localStorage.getItem("theme"));
