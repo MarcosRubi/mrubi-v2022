@@ -982,19 +982,19 @@ header.menu > div {
     font-size: 2.5rem;
   }
 
-  .about-me div {
+  .sobre-mi div {
     flex-direction: column;
   }
-  .about-me__description {
+  .sobre-mi__description {
     padding-right: 0px;
   }
-  .about-me__skills {
+  .sobre-mi__skills {
     padding-left: 0px;
   }
-  .about-me__skills .progress__item-bar {
+  .sobre-mi__skills .progress__item-bar {
     width: 50%;
   }
-  .about-me__skills .progress__item-percent {
+  .sobre-mi__skills .progress__item-percent {
     left: 83%;
   }
 
@@ -1009,19 +1009,19 @@ header.menu > div {
     width: 100%;
   }
 
-  .experience__date {
+  .experiencia__date {
     flex-basis: 100%;
     text-align: center;
   }
-  .experience__content {
+  .experiencia__content {
     flex-basis: 100%;
     padding: 20px 0px;
     order: 2;
   }
-  .experience__content:nth-child(odd) {
+  .experiencia__content:nth-child(odd) {
     padding-right: 0px;
   }
-  .experience__content:nth-child(even) {
+  .experiencia__content:nth-child(even) {
     padding-left: 0px;
   }
 
@@ -1029,16 +1029,16 @@ header.menu > div {
     width: 85%;
   }
 
-  .contact footer > div {
+  .contactar footer > div {
     flex-wrap: wrap;
   }
-  .contact__information, .contact__social {
+  .contactar__information, .contactar__social {
     flex-basis: 50%;
   }
-  .contact__social {
+  .contactar__social {
     text-align: right;
   }
-  .contact__form {
+  .contactar__form {
     flex-basis: 80%;
     margin: 0px auto;
   }
@@ -1091,18 +1091,18 @@ header.menu > div {
     font-size: 1.5rem;
   }
 
-  .about-me__description {
+  .sobre-mi__description {
     padding: 0px 10px;
   }
-  .about-me__skills {
+  .sobre-mi__skills {
     width: 90%;
     padding: 40px 10px;
   }
-  .about-me__skills .progress__item-bar {
+  .sobre-mi__skills .progress__item-bar {
     width: 50%;
     left: 90px;
   }
-  .about-me__skills .progress__item-percent {
+  .sobre-mi__skills .progress__item-percent {
     left: 90%;
   }
 
@@ -1144,13 +1144,13 @@ header.menu > div {
     left: 0px;
   }
 
-  .contact__information, .contact__social {
+  .contactar__information, .contactar__social {
     flex-basis: 100%;
   }
-  .contact__social {
+  .contactar__social {
     text-align: left;
   }
-  .contact__form {
+  .contactar__form {
     flex-basis: 100%;
   }
 }

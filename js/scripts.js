@@ -65,7 +65,7 @@ let dataProjects = [
         urlCode: "https://github.com/MarcosRubi/inveto",
         urlDemo : "https://inveto.vercel.app/",
         date: "15 de Junio del 2020 ~ 01 de Julio del 2020",
-        image: "bg_inveto.webp",
+        image: "bg_inveto.png",
         languages: "HTML, CSS, JavaScript",
         categ: "Maquetaciones",
     },
