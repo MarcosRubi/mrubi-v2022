@@ -20,7 +20,7 @@ let dataProjects = [
         title: "Charity",
         descriptionShort: "Plantilla para una web de donativos",
         descriptionLarge: "Descripción larga",
-        image: "bg_charity.png",
+        image: "bg_charity.webp",
         dificulties: "Difucultades con esto y aquello... ",
         learning:
             "El aprendizaje obtenido fue aprender a resolver esto y aquello, etc...",
@@ -39,7 +39,7 @@ let dataProjects = [
         urlCode: "https://github.com/MarcosRubi/studyInk",
         urlDemo : "https://study-ink.vercel.app/",
         date: "15 de Junio del 2020 ~ 01 de Julio del 2020",
-        image: "bg_studyink.png",
+        image: "bg_studyink.webp",
         languages: "HTML, CSS con Bootstrap, JavaScript",
         categ: "Bootstrap",
     },
@@ -52,7 +52,7 @@ let dataProjects = [
         urlCode: "https://github.com/MarcosRubi/techGear",
         urlDemo : "https://tech-gear.vercel.app/",
         date: "15 de Junio del 2020 ~ 01 de Julio del 2020",
-        image: "bg_techgear.png",
+        image: "bg_techgear.webp",
         languages: "HTML, CSS con Bootstrap, JavaScript",
         categ: "Bootstrap",
     },
@@ -65,7 +65,7 @@ let dataProjects = [
         urlCode: "https://github.com/MarcosRubi/inveto",
         urlDemo : "https://inveto.vercel.app/",
         date: "15 de Junio del 2020 ~ 01 de Julio del 2020",
-        image: "bg_inveto.png",
+        image: "bg_inveto.webp",
         languages: "HTML, CSS, JavaScript",
         categ: "Maquetaciones",
     },
@@ -78,7 +78,7 @@ let dataProjects = [
         urlCode: "https://github.com/MarcosRubi/ListaTareas",
         urlDemo : "https://listar-tareas.herokuapp.com/#",
         date: "15 de Junio del 2020 ~ 01 de Julio del 2020",
-        image: "bg_listartareas.png",
+        image: "bg_listartareas.webp",
         languages: "HTML, CSS, JavaScript, PHP, AJAX, MySQL",
         categ: "PHP",
     },
@@ -91,7 +91,7 @@ let dataProjects = [
         urlCode: "https://github.com/MarcosRubi/marcosrubi",
         urlDemo : "https://marcosrubi.vercel.app/",
         date: "02 de Enero del 2021 ~ 14 de Marzo del 2021",
-        image: "bg_portafolio.png",
+        image: "bg_portafolio.webp",
         languages: "HTML, CSS, JavaScript",
         categ: "Maquetaciones",
     },
@@ -214,7 +214,7 @@ function listAllProjects(data = dataProjects, count = 0) {
         let templateProjectItem = `
             <div class="proyectos__item" data-categorie=${data[i].categ}>
                 <div class="p-relative effect-hover">
-                    <img src="images/projects/${data[i].image}" alt="Foto diseño de ${data[i].title}">
+                    <img src="images/projects/${data[i].image}" alt="Foto diseño de ${data[i].title}" loading="lazy">
                     <div class="p-absolute fill" onclick="javascript:openModalProject('${data[i].title}')">
                         <div class="bg-gradient p-absolute"></div>
                         <button class="btn btn-primary p-absolute"><span><i class="fa fa-search-plus"></i></span></button>
@@ -244,7 +244,7 @@ function listAllCertificates() {
     dataCertificates.forEach((element, index) => {
         let templateCertificateItem = `
         <div class="certificados__content-img" onclick="javascript:openModalCertificate(${index})">
-            <img src="images/certificates/certificado-${element}.webp" alt="">
+            <img src="images/certificates/certificado-${element}.webp" alt="" loading="lazy">
         </div>
         `;
         certificates += templateCertificateItem;
