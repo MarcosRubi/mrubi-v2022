@@ -19,14 +19,14 @@ let dataProjects = [
     {
         title: "Charity",
         descriptionShort: "Plantilla para una web de donativos",
-        descriptionLarge: "Descripción larga",
+        descriptionLarge: "Esta plantilla ofrece un diseño moderno y limpio, el contenido se adapta a cualquier tamaño de pantalla y dispositivo móvil. Puede ser utilizado por cualquier tipo de organización caritativa, causa benéfica, ONG, etc.",
         image: "bg_charity.webp",
-        dificulties: "Difucultades con esto y aquello... ",
+        dificulties: "En la sección de <span>preguntas frecuentes</span> ya que era la primera vez que realizaba un acordeón, por lo que observe en diferentes plantillas su lógica e implemente el que consideraba mejor. ",
         learning:
-            "El aprendizaje obtenido fue aprender a resolver esto y aquello, etc...",
+            "Crear acordeón con HTML, CSS y JavaScript.",
         urlCode: "https://github.com/MarcosRubi/charity",
         urlDemo : "https://charity.vercel.app/",
-        date: "15 de Junio del 2020 ~ 01 de Julio del 2020",
+        date: "25 de Noviembre del 2020 ~ 31 de Diciembre del 2020",
         languages: "HTML, CSS, JavaScript",
         categ: "Maquetaciones",
     },
