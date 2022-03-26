@@ -18,8 +18,7 @@ let messageToggle = document.querySelector(".title");
 let dataProjects = [
     {
         title: "Charity",
-        descriptionShort: "Plantilla para una web de donativos",
-        descriptionLarge: "Esta plantilla ofrece un diseño moderno y limpio, el contenido se adapta a cualquier tamaño de pantalla y dispositivo móvil. Puede ser utilizado por cualquier tipo de organización caritativa, causa benéfica, ONG, etc.",
+        description: "Plantilla para una web de donativos",
         image: "bg_charity.webp",
         dificulties: "En la sección de <span>preguntas frecuentes</span> ya que era la primera vez que realizaba un acordeón, por lo que observe en diferentes plantillas su lógica e implemente el que consideraba mejor. ",
         learning:
@@ -32,62 +31,57 @@ let dataProjects = [
     },
     {
         title: "StudyInk",
-        descriptionShort: "Plantilla para una web de educación",
-        descriptionLarge: "Descripción larga",
-        learning:
-            "El aprendizaje obtenido fue aprender a resolver esto y aquello, etc...",
+        description: "Plantilla para una web de educación",
+        image: "bg_studyink.webp",
+        dificulties : "Agregar efecto al menu cuando el usuario haga scroll.",
+        learning: "Menu sticky que reduce su altura cuando el usuario desplaza hacia abajo.",
         urlCode: "https://github.com/MarcosRubi/studyInk",
         urlDemo : "https://study-ink.vercel.app/",
-        date: "15 de Junio del 2020 ~ 01 de Julio del 2020",
-        image: "bg_studyink.webp",
+        date: "07 de Noviembre del 2020 ~ 31 de Diciembre del 2020",
         languages: "HTML, CSS con Bootstrap, JavaScript",
         categ: "Bootstrap",
     },
     {
         title: "TechGear",
-        descriptionShort: "Plantilla para una web de productos gaming",
-        descriptionLarge: "Descripción larga",
-        learning:
-            "El aprendizaje obtenido fue aprender a resolver esto y aquello, etc...",
+        description: "Plantilla para una web de productos gaming",
+        dificulties: "Que la página se adapte a cualquier tamaño de pantalla ya que no comprendía muy bien la forma interna que trabaja Bootstrap con el responsive. ",
+        learning:"Maquetar usando el framework de Bootstrap, esta fue mi primera página usando este framework.",
         urlCode: "https://github.com/MarcosRubi/techGear",
         urlDemo : "https://tech-gear.vercel.app/",
-        date: "15 de Junio del 2020 ~ 01 de Julio del 2020",
+        date: "15 de Noviembre del 2020 ~ 31 de Diciembre del 2020",
         image: "bg_techgear.webp",
         languages: "HTML, CSS con Bootstrap, JavaScript",
         categ: "Bootstrap",
     },
     {
         title: "Inveto",
-        descriptionShort: "Plantilla para una web de cursos financieros",
-        descriptionLarge: "Descripción larga",
-        learning:
-            "El aprendizaje obtenido fue aprender a resolver esto y aquello, etc...",
+        description: "Plantilla para una web de cursos financieros",
+        dificulties: "Que el pie de página se adapte a cualquier tamaño de pantalla.",
+        learning: "Uso de la propiedad <span>order</span> de flexbox para obtener un mejor diseño en los diferentes tipos de pantallas.",
         urlCode: "https://github.com/MarcosRubi/inveto",
         urlDemo : "https://inveto.vercel.app/",
-        date: "15 de Junio del 2020 ~ 01 de Julio del 2020",
+        date: "23 de Diciembre del 2020 ~ 31 de Diciembre del 2020",
         image: "bg_inveto.webp",
         languages: "HTML, CSS, JavaScript",
         categ: "Maquetaciones",
     },
     {
         title: "Lista de Tareas",
-        descriptionShort: "Plantilla para agendar tareas",
-        descriptionLarge: "Descripción larga",
-        learning:
-            "El aprendizaje obtenido fue aprender a resolver esto y aquello, etc...",
+        description: "Plantilla para agendar tareas",
+        dificulties: "Implementar AJAX con PHP. Primera vez que lo realizaba por mi cuenta, anteriormente solo en proyectos de la universidad lo había realizado.",
+        learning: "Realizar un CRUD con PHP usando AJAX para realizar las acciones sin recargar la página.",
         urlCode: "https://github.com/MarcosRubi/ListaTareas",
         urlDemo : "https://listar-tareas.herokuapp.com/#",
-        date: "15 de Junio del 2020 ~ 01 de Julio del 2020",
+        date: "03 de Enero del 2021 ~ 02 de Febrero del 2021",
         image: "bg_listartareas.webp",
-        languages: "HTML, CSS, JavaScript, PHP, AJAX, MySQL",
+        languages: "HTML, CSS, JavaScript, PHP, AJAX & MySQL",
         categ: "PHP",
     },
     {
         title: "Portafolio",
-        descriptionShort: "Primer diseño de mi portafolio personal",
-        descriptionLarge: "Descripción larga",
-        learning:
-            "El aprendizaje obtenido fue aprender a resolver esto y aquello, etc...",
+        description: "Primer diseño de mi portafolio personal",
+        dificulties: "Funcionamiento del filtro de los proyectos por categoría y el slider de los certificados online.",
+        learning: "Usar la libreria <a href='https://muuri.dev/' target='_blank'>Muuri</a> para el filtrado de proyectos por categoria.",
         urlCode: "https://github.com/MarcosRubi/marcosrubi",
         urlDemo : "https://marcosrubi.vercel.app/",
         date: "02 de Enero del 2021 ~ 14 de Marzo del 2021",
@@ -131,10 +125,8 @@ function changeTheme(theme) {
 }
 function iconMenuHamburguer() {
     localStorage.getItem("isDark") == "true"
-        ? (document.querySelector(".menu__icon-hamburguer").style.filter =
-              "invert(0)")
-        : (document.querySelector(".menu__icon-hamburguer").style.filter =
-              "invert(1)");
+        ? (document.querySelector(".menu__icon-hamburguer").style.filter ="invert(0)")
+        : (document.querySelector(".menu__icon-hamburguer").style.filter = "invert(1)");
 }
 function showMenu() {
     let menuIcon = document.querySelector(".menu__icon-hamburguer");
@@ -179,7 +171,6 @@ function openModalProject(id) {
     let data = dataProjects.filter((project) => project.title == id);
 
     title.innerHTML = data[0].title;
-    description.innerHTML = data[0].descriptionLarge;
     image.src = `images/projects/${data[0].image}`;
     languages.innerHTML = data[0].languages;
     btnUrlCode.setAttribute("href", data[0].urlCode);
@@ -221,7 +212,7 @@ function listAllProjects(data = dataProjects, count = 0) {
                     </div>
                 </div>
                 <h3 class="text-center">${data[i].title}</h3>
-                <p class="text-center">${data[i].descriptionShort}</p>
+                <p class="text-center">${data[i].description}</p>
             </div>
             `;
         projectItems += templateProjectItem;
