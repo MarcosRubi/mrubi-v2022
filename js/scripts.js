@@ -107,7 +107,7 @@ function themeDark(isChangeTheme = false) {
     } else {
         if (localStorage.getItem("isDark") == "true") {
             toggleSwitch.checked = true;
-            messageToggle.innerHTML = '<i class="fas fa-sort-up"></i>Activar el modo claro';
+            messageToggle.innerHTML = 'Activar el modo día';
         }
         iconMenuHamburguer();
     }
