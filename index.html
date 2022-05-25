@@ -10,10 +10,13 @@
     <meta property="og:image" content="images/og_image.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://marcosrubi.vercel.app/">
+    <meta property="og:url" content="https://mrubi.vercel.app/">
     <meta property="og:site_name" content="Portafolio de Marcos Rubí">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@Fuhrer_RD">
+    <meta name="description" content="Portafolio personal de Marcos Rubí">
+    <meta name="keywords" content="Portafolio, Marcos Rubi, Técnico, ingeniero, sistemas, desarrollador web, programador">
+    <meta name="author" content="Marcos Rubí">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Portafolio ~ Marcos Rubí</title>
     <script async src="https://kit.fontawesome.com/e52e3f7d8f.js" crossorigin="anonymous"></script>
@@ -38,7 +41,7 @@
             </ul>
           </nav>
           <div class="d-flex align-center p-relative settings">
-            <div class="menu__toggle-theme">
+            <div class="menu__toggle">
               <input type="checkbox" name="toggle-theme" id="toggle-theme"><i class="fa fa-moon"></i><i class="fa fa-sun"></i>
               <label class="title" for="toggle-theme">
                  Activar el modo noche</label>
@@ -60,6 +63,10 @@
                     <div onclick="javascript:changeTheme('green');"><span class="theme-color" style="background:#35858b;"> </span><span class="theme-color" style="background:#4fbdba;"></span></div>
                   </li>
                 </ul>
+                <h3>Alto contraste </h3>
+                <div class="menu__toggle contrast">
+                  <input type="checkbox" name="toggle-contrast" id="toggle-contrast"><span class="left">No</span><span class="right">Si</span>
+                </div>
               </div>
             </div>
           </div>
@@ -260,7 +267,7 @@
       <div class="modal__content">
         <h2> </h2>
         <p id="description"> </p>
-        <div class="d-flex jc-center"><img src="images/projects/bg_charity.webp" alt=""></div>
+        <div class="d-flex jc-center"><img src="images/projects/bg_charity.webp" alt="Portada del proyecto Charity creado por Marcos Rubí"></div>
         <div class="d-flex jc-center f-wrap"><a class="btn btn-primary w-200 jc-center align-center m-1" href="#" target="_blank" id="btnUrlCode"><span>Ver Código </span></a><a class="btn btn-secondary w-200 jc-center align-center m-1" href="#" target="_blank" id="btnUrlDemo"><span>Ver Demo </span></a></div>
         <h4>Principales dificultades en su elaboración.</h4>
         <p id="dificulties"></p>
@@ -280,11 +287,12 @@
       <div class="d-flex jc-end" onclick="javascript:closeModal()">
         <button class="btn btn-secondary"><span>X</span></button>
       </div>
-      <div class="img p-relative"><img src="" alt="">
+      <div class="img p-relative"><img src="" alt="Certificado de Marcos Rubí">
         <button class="p-absolute arrow arrow-left" data-id=""><i class="fas fa-chevron-left"></i></button>
         <button class="p-absolute arrow arrow-right" data-id=""><i class="fas fa-chevron-right"></i></button>
       </div>
     </div>
+    <div id="script"></div>
     <script src="js/scripts.js"> </script>
   </body>
 </html>
