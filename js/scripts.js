@@ -105,7 +105,7 @@ let dataCertificates = [
   "pug",
   "crear-pagina-web-desde-cero",
   "master-css",
-  "master-js",
+  "master-js"
 ];
 function themeDark(isChangeTheme = false) {
   if (isChangeTheme) {
@@ -277,7 +277,7 @@ function listAllCertificates() {
         `;
     certificates += templateCertificateItem;
   });
-  divCertificates.innerHTML = certificates;
+  divCertificates.innerHTML += certificates;
 }
 function openModalCertificate(id) {
   let divModal = document.getElementById("modal-certificate");
@@ -380,6 +380,7 @@ window.addEventListener("load", () => {
   changeTheme(localStorage.getItem("theme"));
   listAllProjects();
   listAllCertificates();
+  startAnimatedPercent();
 
   //ANIMATIONS SHOW ELEMENT IN VIEWPORT
   const aboutMeDescription = document.querySelector(".sobre-mi__description");
