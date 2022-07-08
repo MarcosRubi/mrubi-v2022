@@ -312,6 +312,14 @@ header.menu > div {
   height: 60px;
 }
 
+.not-allowed {
+  cursor: not-allowed;
+}
+
+iframe {
+  width: 350px !important;
+}
+
 .title {
   background: var(--color-link-alpha);
   color: #f5f5f5;
@@ -985,6 +993,10 @@ header.menu > div {
   }
 }
 @media (max-width: 992px) {
+  iframe {
+    width: 300px !important;
+  }
+
   .menu__icon-hamburguer {
     display: block;
     transition: 300ms;

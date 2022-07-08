@@ -18,6 +18,19 @@ let messageToggle = document.querySelector(".title");
 
 let dataProjects = [
   {
+    title: "Pintelog",
+    description: "Red social de fotos",
+    image: "bg_pintelog.webp",
+    dificulties:
+      "La estructura de archivos ya que es el primer proyecto complejo, dentro de lo cabe que realizo, implementando un sistema de inicio de sesión, registro, crear publicaciones, buscar usuarios, añadir fotos a favoritos, editar usuario, eliminar publicaciones, entre otros funcionamientos. ",
+    learning: "Práctica usando AJAX con PHP y la Programación Orientada a Objetos, aprendí a usar las librerías de <a href='https://github.com/vlucas/phpdotenv' target='_blank'>Dotenv</a> para variables de entorno y <a href='https://github.com/PHPMailer/PHPMailer' target='_blank'>PHPMailer</a>  para el envío de emails",
+    urlCode: "https://github.com/MarcosRubi/pintelog",
+    urlDemo: "",
+    date: "11 de Junio del 2022 ~ 07 de Julio del 2022",
+    languages: "HTML con PUG, CSS con SASS, JavaScript, AJAX, PHP usando Programación Orientada a Objetos",
+    categ: "PHP",
+  },
+  {
     title: "Charity",
     description: "Plantilla para una web de donativos",
     image: "bg_charity.webp",
@@ -211,7 +224,13 @@ function openModalProject(id) {
   image.src = `images/projects/${data[0].image}`;
   languages.innerHTML = data[0].languages;
   btnUrlCode.setAttribute("href", data[0].urlCode);
-  btnUrlDemo.setAttribute("href", data[0].urlDemo);
+  if(data[0].urlDemo != ""){
+    btnUrlDemo.setAttribute("href",data[0].urlDemo);
+  }else{
+    btnUrlDemo.classList.add("not-allowed"); 
+    btnUrlDemo.removeAttribute("href");
+  }
+  
   dificulties.innerHTML = data[0].dificulties;
   learning.innerHTML = data[0].learning;
   date.innerHTML = data[0].date;
