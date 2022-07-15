@@ -226,6 +226,7 @@ function openModalProject(id) {
   btnUrlCode.setAttribute("href", data[0].urlCode);
   if(data[0].urlDemo != ""){
     btnUrlDemo.setAttribute("href",data[0].urlDemo);
+    btnUrlDemo.classList.contains('not-allowed') ? btnUrlDemo.classList.remove("not-allowed") : ''; 
   }else{
     btnUrlDemo.classList.add("not-allowed"); 
     btnUrlDemo.removeAttribute("href");
