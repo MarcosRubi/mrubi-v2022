@@ -23,11 +23,13 @@ let dataProjects = [
     image: "bg_pintelog.webp",
     dificulties:
       "La estructura de archivos ya que es el primer proyecto complejo, dentro de lo cabe que realizo, implementando un sistema de inicio de sesión, registro, crear publicaciones, buscar usuarios, añadir fotos a favoritos, editar usuario, eliminar publicaciones, entre otros funcionamientos. ",
-    learning: "Práctica usando AJAX con PHP y la Programación Orientada a Objetos, aprendí a usar las librerías de <a href='https://github.com/vlucas/phpdotenv' target='_blank'>Dotenv</a> para variables de entorno y <a href='https://github.com/PHPMailer/PHPMailer' target='_blank'>PHPMailer</a>  para el envío de emails",
+    learning:
+      "Práctica usando AJAX con PHP y la Programación Orientada a Objetos, aprendí a usar las librerías de <a href='https://github.com/vlucas/phpdotenv' target='_blank'>Dotenv</a> para variables de entorno y <a href='https://github.com/PHPMailer/PHPMailer' target='_blank'>PHPMailer</a>  para el envío de emails",
     urlCode: "https://github.com/MarcosRubi/pintelog",
     urlDemo: "https://pintelog-app.000webhostapp.com/",
     date: "11 de Junio del 2022 ~ 07 de Julio del 2022",
-    languages: "HTML con PUG, CSS con SASS, JavaScript, AJAX, PHP usando Programación Orientada a Objetos",
+    languages:
+      "HTML con PUG, CSS con SASS, JavaScript, AJAX & PHP usando Programación Orientada a Objetos",
     categ: "PHP",
   },
   {
@@ -40,7 +42,20 @@ let dataProjects = [
     urlCode: "https://github.com/MarcosRubi/charity",
     urlDemo: "https://charity.vercel.app/",
     date: "25 de Noviembre del 2020 ~ 31 de Diciembre del 2020",
-    languages: "HTML, CSS, JavaScript",
+    languages: "HTML, CSS & JavaScript",
+    categ: "Maquetaciones",
+  },
+  {
+    title: "Fylo dark theme landing page",
+    description:
+      "Desafio de <a href='https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd' target='_blank'>Frontend Mentor</a>",
+    image: "bg_fylo.webp",
+    dificulties: "",
+    learning: "",
+    urlCode: "https://github.com/MarcosRubi/Fylo-dark-theme-landing-page",
+    urlDemo: "https://marcosrubi.github.io/Fylo-dark-theme-landing-page/",
+    date: "09 de Agosto del 2022 ~ 09 de Agosto del 2022",
+    languages: "HTML, CSS & JavaScript",
     categ: "Maquetaciones",
   },
   {
@@ -53,21 +68,7 @@ let dataProjects = [
     urlCode: "https://github.com/MarcosRubi/studyInk",
     urlDemo: "https://study-ink.vercel.app/",
     date: "07 de Noviembre del 2020 ~ 31 de Diciembre del 2020",
-    languages: "HTML, CSS con Bootstrap, JavaScript",
-    categ: "Bootstrap",
-  },
-  {
-    title: "TechGear",
-    description: "Plantilla para una web de productos gaming",
-    dificulties:
-      "Que la página se adapte a cualquier tamaño de pantalla ya que no comprendía muy bien la forma interna que trabaja Bootstrap con el responsive. ",
-    learning:
-      "Maquetar usando el framework de Bootstrap, esta fue mi primera página usando este framework.",
-    urlCode: "https://github.com/MarcosRubi/techGear",
-    urlDemo: "https://tech-gear.vercel.app/",
-    date: "15 de Noviembre del 2020 ~ 31 de Diciembre del 2020",
-    image: "bg_techgear.webp",
-    languages: "HTML, CSS con Bootstrap, JavaScript",
+    languages: "HTML, CSS con Bootstrap & JavaScript",
     categ: "Bootstrap",
   },
   {
@@ -81,7 +82,7 @@ let dataProjects = [
     urlDemo: "https://inveto.vercel.app/",
     date: "23 de Diciembre del 2020 ~ 31 de Diciembre del 2020",
     image: "bg_inveto.webp",
-    languages: "HTML, CSS, JavaScript",
+    languages: "HTML, CSS & JavaScript",
     categ: "Maquetaciones",
   },
   {
@@ -99,6 +100,32 @@ let dataProjects = [
     categ: "PHP",
   },
   {
+    title: "NFT preview card component",
+    description: "Desafio de <a href='https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U' target='_blank'>Frontend Mentor</a> ",
+    dificulties:"",
+    learning:"",
+    urlCode: "https://github.com/MarcosRubi/NFT-preview-card-component",
+    urlDemo: "https://marcosrubi.github.io/NFT-preview-card-component/",
+    date: "11 de Agosto del 2022 ~ 11 de Agosto del 2022",
+    image: "bg_nft.webp",
+    languages: "HTML & CSS con SCSS",
+    categ: "Maquetaciones",
+  },
+  {
+    title: "TechGear",
+    description: "Plantilla para una web de productos gaming",
+    dificulties:
+      "Que la página se adapte a cualquier tamaño de pantalla ya que no comprendía muy bien la forma interna que trabaja Bootstrap con el responsive. ",
+    learning:
+      "Maquetar usando el framework de Bootstrap, esta fue mi primera página usando este framework.",
+    urlCode: "https://github.com/MarcosRubi/techGear",
+    urlDemo: "https://tech-gear.vercel.app/",
+    date: "15 de Noviembre del 2020 ~ 31 de Diciembre del 2020",
+    image: "bg_techgear.webp",
+    languages: "HTML, CSS con Bootstrap & JavaScript",
+    categ: "Bootstrap",
+  },
+  {
     title: "Portafolio",
     description: "Primer diseño de mi portafolio personal",
     dificulties:
@@ -109,7 +136,7 @@ let dataProjects = [
     urlDemo: "https://marcosrubi.vercel.app/",
     date: "02 de Enero del 2021 ~ 14 de Marzo del 2021",
     image: "bg_portafolio.webp",
-    languages: "HTML, CSS, JavaScript",
+    languages: "HTML, CSS & JavaScript",
     categ: "Maquetaciones",
   },
 ];
@@ -118,7 +145,7 @@ let dataCertificates = [
   "pug",
   "crear-pagina-web-desde-cero",
   "master-css",
-  "master-js"
+  "master-js",
 ];
 function themeDark(isChangeTheme = false) {
   if (isChangeTheme) {
@@ -224,14 +251,20 @@ function openModalProject(id) {
   image.src = `images/projects/${data[0].image}`;
   languages.innerHTML = data[0].languages;
   btnUrlCode.setAttribute("href", data[0].urlCode);
-  if(data[0].urlDemo != ""){
-    btnUrlDemo.setAttribute("href",data[0].urlDemo);
-    btnUrlDemo.classList.contains('not-allowed') ? btnUrlDemo.classList.remove("not-allowed") : ''; 
-  }else{
-    btnUrlDemo.classList.add("not-allowed"); 
+  if (data[0].urlDemo != "") {
+    btnUrlDemo.setAttribute("href", data[0].urlDemo);
+    btnUrlDemo.classList.contains("not-allowed")
+      ? btnUrlDemo.classList.remove("not-allowed")
+      : "";
+  } else {
+    btnUrlDemo.classList.add("not-allowed");
     btnUrlDemo.removeAttribute("href");
   }
-  
+  data[0].dificulties != ""
+    ? (document.getElementById("modal__content--info").style.display =
+        "initial")
+    : (document.getElementById("modal__content--info").style.display = "none");
+
   dificulties.innerHTML = data[0].dificulties;
   learning.innerHTML = data[0].learning;
   date.innerHTML = data[0].date;
