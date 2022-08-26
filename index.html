@@ -1,299 +1,346 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="default-light">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Portafolio De Marcos Rubí">
-    <meta property="og:description" content="Técnico en sistemas operativos y redes. Estudiante de cuarto año en ingeniería de sistemas y redes">
-    <meta property="og:image" content="images/og_image.webp">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://mrubi.vercel.app/">
-    <meta property="og:site_name" content="Portafolio de Marcos Rubí">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="@Fuhrer_RD">
-    <meta name="description" content="Portafolio personal de Marcos Rubí">
-    <meta name="keywords" content="Portafolio, Marcos Rubi, Técnico, ingeniero, sistemas, desarrollador web, programador">
-    <meta name="author" content="Marcos Rubí">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Portafolio ~ Marcos Rubí</title>
-    <script async src="https://kit.fontawesome.com/e52e3f7d8f.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link async href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;family=Telex&amp;display=swap" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.min.css">
-  </head>
-  <body>
-    <main id="effect-blur">
-      <header class="menu">
-        <div class="container d-flex jc-sb align-center">
-          <div class="menu__logo"><a class="d-flex align-center" id="top"><img src="images/logo.webp" alt="Logo de Marcos Rubi">Marcos Rubí</a></div>
-          <div class="menu__icon-hamburguer" onclick="javascript:showMenu();"></div>
-          <nav class="menu__nav">
-            <ul class="d-flex">
-              <li><a href="#sobre-mi" onclick="javascript:showMenu();" id="nav_sobre-mi">Sobre Mí</a></li>
-              <li><a href="#proyectos" onclick="javascript:showMenu();" id="nav_proyectos">Proyectos</a></li>
-              <li><a href="#experiencia" onclick="javascript:showMenu();" id="nav_experiencia">Experiencia</a></li>
-              <li><a href="#certificados" onclick="javascript:showMenu();" id="nav_certificados">Certificados</a></li>
-              <li><a href="#contactar" onclick="javascript:showMenu();" id="nav_contactar">Contactar</a></li>
-            </ul>
-          </nav>
-          <div class="d-flex align-center p-relative settings">
-            <div class="menu__toggle">
-              <input type="checkbox" name="toggle-theme" id="toggle-theme"><i class="fa fa-moon"></i><i class="fa fa-sun"></i>
-              <label class="title" for="toggle-theme">
-                 Activar el modo noche</label>
-            </div>
-            <div class="menu__colour-variations"><a class="btn-toggle" id="btn-colors"><i class="fas fa-cog"></i></a>
-              <div class="menu__preset-colors p-absolute">
-                <h3>Seleccione el tema </h3>
-                <ul class="menu__list-theme">
-                  <li> 
-                    <div onclick="javascript:changeTheme('default');"><span class="theme-color" style="background:#10375c;"> </span><span class="theme-color" style="background:#c1272d;"> </span></div>
-                  </li>
-                  <li> 
-                    <div onclick="javascript:changeTheme('blue');"><span class="theme-color" style="background:#3959a2;"> </span><span class="theme-color" style="background:#a8dbd2;"> </span></div>
-                  </li>
-                  <li> 
-                    <div onclick="javascript:changeTheme('yellow');"><span class="theme-color" style="background:#09c0fa;"> </span><span class="theme-color" style="background:#ffb647;"> </span></div>
-                  </li>
-                  <li> 
-                    <div onclick="javascript:changeTheme('green');"><span class="theme-color" style="background:#35858b;"> </span><span class="theme-color" style="background:#4fbdba;"></span></div>
-                  </li>
-                </ul>
-                <h3>Alto contraste </h3>
-                <div class="menu__toggle contrast">
-                  <input type="checkbox" name="toggle-contrast" id="toggle-contrast"><span class="left">No</span><span class="right">Si</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="hero d-flex align-center bg-gradient">
-        <div class="hero__bg p-absolute"></div>
-        <div class="hero__content container">
-          <h1>Hola, mi nombre es <span>Marcos Rubí</span></h1>
-          <p><strong>Técnico en redes y sistemas operativos, actualmente estoy cursando cuarto año en ingeniería de sistemas y redes.</strong></p><a class="btn btn-primary not-allowed" download="CV-Marcos_Rubi"><span>Descargar CV</span></a>
-        </div>
-      </div>
-      <section class="sobre-mi container py-3" id="sobre-mi">
-        <h2 class="text-center">Sobre Mí</h2>
-        <div class="d-flex">
-          <div class="sobre-mi__description f-basis p-relative">
-            <h3>Marcos Daniel Rubí Hernández </h3>
-            <p>Durante mi proceso de estudiante, he tenido la ocasión de ampliar mis conocimientos y los cursos que he realizado en internet me han ofrecido la oportunidad de profundizar en diferentes áreas sobre el desarrollo web, que considero de especial valía para poder trabajar en una empresa. Además, considero que yo podría aportarles la pasión y el entusiasmo por el trabajo bien hecho, responsabilidad, habilidades y conocimientos.</p>
-            <p>Me gustaría poder ampliar mi perfil como candidato en una entrevista personal. Por este motivo, estaré disponible en mis redes sociales y por correo electrónico en el apartado de contactar</p>
-            <p>Queda a su disposición y le saluda atentamente <span>Marcos Rubí</span></p>
-          </div>
-          <div class="sobre-mi__skills f-basis p-relative">
-            <h3>Habilidades</h3>
-            <div class="progress" id="progress_1" data-percent="95">
-              <div class="progress__item d-flex">
-                <h4>HTML</h4>
-                <div Class="progress__item-bar p-absolute">
-                  <div class="progress__item-progressing"></div>
-                </div>
-                <p class="progress__item-percent p-absolute">0%</p>
-              </div>
-            </div>
-            <div class="progress" id="progress_2" data-percent="85">
-              <div class="progress__item d-flex">
-                <h4>CSS</h4>
-                <div Class="progress__item-bar p-absolute">
-                  <div class="progress__item-progressing"></div>
-                </div>
-                <p class="progress__item-percent p-absolute">0%</p>
-              </div>
-            </div>
-            <div class="progress" id="progress_3" data-percent="70">
-              <div class="progress__item d-flex">
-                <h4>JavaScript</h4>
-                <div Class="progress__item-bar p-absolute">
-                  <div class="progress__item-progressing"></div>
-                </div>
-                <p class="progress__item-percent p-absolute">0%</p>
-              </div>
-            </div>
-            <div class="progress" id="progress_4" data-percent="60">
-              <div class="progress__item d-flex">
-                <h4>PHP</h4>
-                <div Class="progress__item-bar p-absolute">
-                  <div class="progress__item-progressing"></div>
-                </div>
-                <p class="progress__item-percent p-absolute">0%</p>
-              </div>
-            </div>
-            <div class="progress" id="progress_5" data-percent="50">
-              <div class="progress__item d-flex">
-                <h4>GIT</h4>
-                <div Class="progress__item-bar p-absolute">
-                  <div class="progress__item-progressing"></div>
-                </div>
-                <p class="progress__item-percent p-absolute">0%</p>
-              </div>
-            </div>
-            <div class="progress" id="progress_6" data-percent="50">
-              <div class="progress__item d-flex">
-                <h4>MySQL</h4>
-                <div Class="progress__item-bar p-absolute">
-                  <div class="progress__item-progressing"></div>
-                </div>
-                <p class="progress__item-percent p-absolute">0%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="proyectos container py-3" id="proyectos">
-        <h2 class="text-center">Proyectos</h2>
-        <nav class="menu-projects p-relative">
-          <ul class="d-flex jc-center f-wrap">
-            <li class="m-1">
-              <button class="btn btn-secondary w-120 jc-center align-center active" onclick="javascript:filterProjectsByCateg('Todos');"><span>Todos</span></button>
-            </li>
-            <li class="m-1">
-              <button class="btn btn-secondary w-120 jc-center align-center" onclick="javascript:filterProjectsByCateg('Maquetaciones');"><span>Maquetaciones</span></button>
-            </li>
-            <li class="m-1">
-              <button class="btn btn-secondary w-120 jc-center align-center" onclick="javascript:filterProjectsByCateg('Bootstrap');"><span>Bootstrap</span></button>
-            </li>
-            <li class="m-1">
-              <button class="btn btn-secondary w-120 jc-center align-center" onclick="javascript:filterProjectsByCateg('PHP');"><span>PHP</span></button>
-            </li>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portafolio De Marcos Rubí">
+  <meta property="og:description"
+    content="Técnico en sistemas operativos y redes. Estudiante de cuarto año en ingeniería de sistemas y redes">
+  <meta property="og:image" content="images/og_image.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://mrubi.vercel.app/">
+  <meta property="og:site_name" content="Portafolio de Marcos Rubí">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@Fuhrer_RD">
+  <meta name="description" content="Portafolio personal de Marcos Rubí">
+  <meta name="keywords" content="Portafolio, Marcos Rubi, Técnico, ingeniero, sistemas, desarrollador web, programador">
+  <meta name="author" content="Marcos Rubí">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Portafolio ~ Marcos Rubí</title>
+  <script async src="https://kit.fontawesome.com/e52e3f7d8f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link async href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;family=Telex&amp;display=swap"
+    rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <main id="effect-blur">
+    <header class="menu">
+      <div class="container d-flex jc-sb align-center">
+        <div class="menu__logo"><a class="d-flex align-center" id="top"><img src="images/logo.webp"
+              alt="Logo de Marcos Rubi">Marcos Rubí</a></div>
+        <div class="menu__icon-hamburguer" onclick="javascript:showMenu();"></div>
+        <nav class="menu__nav">
+          <ul class="d-flex">
+            <li><a href="#sobre-mi" onclick="javascript:showMenu();" id="nav_sobre-mi">Sobre Mí</a></li>
+            <li><a href="#proyectos" onclick="javascript:showMenu();" id="nav_proyectos">Proyectos</a></li>
+            <li><a href="#experiencia" onclick="javascript:showMenu();" id="nav_experiencia">Experiencia</a></li>
+            <li><a href="#certificados" onclick="javascript:showMenu();" id="nav_certificados">Certificados</a></li>
+            <li><a href="#contactar" onclick="javascript:showMenu();" id="nav_contactar">Contactar</a></li>
           </ul>
         </nav>
-        <div class="d-grid divProjects" id="divProjects"></div>
-        <div class="d-flex jc-center f-wrap " id="btn-projects">
-          <button class="btn btn-primary m-2 w-200" id="btnShowMore"><span>Mostrar más </span></button>
-          <button class="btn btn-secondary m-2 w-200" id="btnShowLess"><span>Mostrar menos</span></button>
-        </div>
-      </section>
-      <section class="experiencia container py-3" id="experiencia">
-        <h2 class="text-center">Experiencia </h2>
-        <div class="experiencia__item d-flex jc-center align-center f-wrap">
-          <div class="experiencia__date">
-            <h3>Soporte Técnico </h3>
-            <p>01 Nov 2018 ~ 10 Dic 2018</p>
+        <div class="d-flex align-center p-relative settings">
+          <div class="menu__toggle">
+            <input type="checkbox" name="toggle-theme" id="toggle-theme"><i class="fa fa-moon"></i><i
+              class="fa fa-sun"></i>
+            <label class="title" for="toggle-theme">
+              Activar el modo noche</label>
           </div>
-          <div class="experiencia__content">
-            <h3>Calvo Conservas S.A de C.V</h3>
-            <p><strong>Prácticas profesionales</strong> realizando actividades como mantenimiento preventivo en computadoras, instalación de sistemas operativos y automatización de procesos en excel.</p>
-          </div>
-        </div>
-        <div class="experiencia__item d-flex jc-center align-center f-wrap">
-          <div class="experiencia__content">
-            <h3>Instituciones Públicas De Educación En La Zona Oriental De El Salvador</h3>
-            <p><strong>Proyección Social</strong> realizando mantenimiento en computadoras de las instituciones públicas de educación en la zona oriental de El Salvador..</p>
-          </div>
-          <div class="experiencia__date">
-            <h3>Soporte Técnico </h3>
-            <p>07 Jun 2017 ~ 07 Jul 2017</p>
-          </div>
-        </div>
-      </section>
-      <section class="certificados container py-3" id="certificados">
-        <h2 class="text-center">Certificados</h2>
-        <div class="d-grid" id="divCertificates"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3222fd4b-97b2-4671-822d-7a1311994dde" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script></div>
-      </section>
-      <section class="contactar" id="contactar">
-        <footer class="container py-3">
-          <h2 class="text-center">Contactar</h2>
-          <div class="d-flex">
-            <div class="contactar__information p-relative">
-              <h3>Repositorios </h3>
-              <div class="d-flex contactar__link">
-                <div><i class="fab fa-github"></i></div>
-                <div>
-                  <h4>GitHub</h4><a class="link" href="https://github.com/MarcosRubi" rel="noopener noreferrer" target="_blank">Visitar </a>
-                </div>
-              </div>
-              <div class="d-flex contactar__link">
-                <div><i class="fa fa-code"></i></div>
-                <div>
-                  <h4>Frontend Mentor</h4><a class="link" href="https://www.frontendmentor.io/profile/MarcosRubi" rel="noopener noreferrer" target="_blank">Visitar </a>
-                </div>
-              </div>
-              <div class="d-flex contactar__link">
-                <div><i class="fa fa-codepen"></i></div>
-                <div>
-                  <h4>Codepen</h4><a class="link" href="https://codepen.io/Marcos_Rubi" rel="noopener noreferrer" target="_blank">Visitar </a>
-                </div>
-              </div>
-            </div>
-            <div class="contactar__social p-relative">
-              <h3>Redes sociales</h3>
-              <ul>
-                <li><a class="link" href="https://www.linkedin.com/in/marcos-rubi/" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in">
-                      <label>LinkedIn</label></i></a></li>
-                <li><a class="link" href="https://www.facebook.com/MarcosRubi07" rel="noopener noreferrer" target="_blank"><i class="fa fa-facebook-f">
-                      <label>Facebook</label></i></a></li>
-                <li><a class="link" href="https://www.instagram.com/marcos_rubi_07/" rel="noopener noreferrer" target="_blank"><i class="fa fa-instagram">
-                      <label>Instagram</label></i></a></li>
-                <li><a class="link" href="https://twitter.com/Fuhrer_RD" rel="noopener noreferrer" target="_blank"><i class="fa fa-twitter">
-                      <label>Twitter</label></i></a></li>
+          <div class="menu__colour-variations"><a class="btn-toggle" id="btn-colors"><i class="fas fa-cog"></i></a>
+            <div class="menu__preset-colors p-absolute">
+              <h3>Seleccione el tema </h3>
+              <ul class="menu__list-theme">
+                <li>
+                  <div onclick="javascript:changeTheme('default');"><span class="theme-color"
+                      style="background:#10375c;"> </span><span class="theme-color" style="background:#c1272d;"> </span>
+                  </div>
+                </li>
+                <li>
+                  <div onclick="javascript:changeTheme('blue');"><span class="theme-color" style="background:#3959a2;">
+                    </span><span class="theme-color" style="background:#a8dbd2;"> </span></div>
+                </li>
+                <li>
+                  <div onclick="javascript:changeTheme('yellow');"><span class="theme-color"
+                      style="background:#09c0fa;"> </span><span class="theme-color" style="background:#ffb647;"> </span>
+                  </div>
+                </li>
+                <li>
+                  <div onclick="javascript:changeTheme('green');"><span class="theme-color" style="background:#35858b;">
+                    </span><span class="theme-color" style="background:#4fbdba;"></span></div>
+                </li>
               </ul>
-            </div>
-            <div class="contactar__form p-relative">
-              <h3>Enviar correo</h3>
-              <form action="https://formsubmit.io/send/danielhernandez9980@gmail.com" id="formContact">
-                <div class="input-group">
-                  <input type="text" name="txtNombre" id="txtNombre" required=""><span><i class="fa fa-user"></i></span>
-                  <label for="txtName">Nombre </label>
-                </div>
-                <div class="input-group">
-                  <input type="email" name="txtEmail" id="txtEmail" required=""><span><i class="fa fa-envelope"></i></span>
-                  <label for="txtEmail">Email </label>
-                </div>
-                <div class="input-group">
-                  <textarea name="txtMensaje" id="txtMessage" required=""></textarea><span><i class="fa fa-comment"></i></span>
-                  <label for="txtMessage">Mensaje </label>
-                </div>
-                <button class="btn btn-primary w-200 jc-center align-center" type="submit"><span>Enviar mensaje</span></button>
-              </form>
+              <h3>Alto contraste </h3>
+              <div class="menu__toggle contrast">
+                <input type="checkbox" name="toggle-contrast" id="toggle-contrast"><span class="left">No</span><span
+                  class="right">Si</span>
+              </div>
             </div>
           </div>
-        </footer>
-      </section>
-    </main>
-    <div class="modal text-center container" id="modal-project">
-      <div class="d-flex jc-end" onclick="javascript:closeModal()">
-        <button class="btn btn-secondary"><span>X</span></button>
-      </div>
-      <hr>
-      <div class="modal__content">
-        <h2> </h2>
-        <p id="description"> </p>
-        <div class="d-flex jc-center"><img src="images/projects/bg_charity.webp" alt="Portada del proyecto Charity creado por Marcos Rubí"></div>
-        <div class="d-flex jc-center f-wrap"><a class="btn btn-primary w-200 jc-center align-center m-1" href="#" target="_blank" id="btnUrlCode" onclick="javascript:closeModal()"><span>Ver Código </span></a><a class="btn btn-secondary w-200 jc-center align-center m-1" href="#" target="_blank" id="btnUrlDemo" onclick="javascript:closeModal()"><span>Ver Demo </span></a></div>
-        <div id="modal__content--info">
-          <h4>Principales dificultades en su elaboración.</h4>
-          <p id="dificulties"></p>
-          <h4>Aprendizaje obtenido </h4>
-          <p id="learning"> </p>
         </div>
-        <ul>
-          <li><strong>Tiempo de elaboración: </strong> <label id="date"></label>  </li>
-          <li><strong>Tecnología empleada: </strong><label id="languages"></label></li>
+      </div>
+    </header>
+    <div class="hero d-flex align-center bg-gradient">
+      <div class="hero__bg p-absolute"></div>
+      <div class="hero__content container">
+        <h1>Hola, mi nombre es <span>Marcos Rubí</span></h1>
+        <p><strong>Técnico en redes y sistemas operativos, actualmente estoy cursando cuarto año en ingeniería de
+            sistemas y redes.</strong></p><a class="btn btn-primary not-allowed"
+          download="CV-Marcos_Rubi"><span>Descargar CV</span></a>
+      </div>
+    </div>
+    <section class="sobre-mi container py-3" id="sobre-mi">
+      <h2 class="text-center">Sobre Mí</h2>
+      <div class="d-flex">
+        <div class="sobre-mi__description f-basis p-relative">
+          <h3>Marcos Daniel Rubí Hernández </h3>
+          <p>Durante mi proceso de estudiante, he tenido la ocasión de ampliar mis conocimientos y los cursos que he
+            realizado en internet me han ofrecido la oportunidad de profundizar en diferentes áreas sobre el desarrollo
+            web, que considero de especial valía para poder trabajar en una empresa. Además, considero que yo podría
+            aportarles la pasión y el entusiasmo por el trabajo bien hecho, responsabilidad, habilidades y
+            conocimientos.</p>
+          <p>Me gustaría poder ampliar mi perfil como candidato en una entrevista personal. Por este motivo, estaré
+            disponible en mis redes sociales y por correo electrónico en el apartado de contactar</p>
+          <p>Queda a su disposición y le saluda atentamente <span>Marcos Rubí</span></p>
+        </div>
+        <div class="sobre-mi__skills f-basis p-relative">
+          <h3>Habilidades</h3>
+          <div class="progress" id="progress_1" data-percent="95">
+            <div class="progress__item d-flex">
+              <h4>HTML</h4>
+              <div Class="progress__item-bar p-absolute">
+                <div class="progress__item-progressing"></div>
+              </div>
+              <p class="progress__item-percent p-absolute">0%</p>
+            </div>
+          </div>
+          <div class="progress" id="progress_2" data-percent="85">
+            <div class="progress__item d-flex">
+              <h4>CSS</h4>
+              <div Class="progress__item-bar p-absolute">
+                <div class="progress__item-progressing"></div>
+              </div>
+              <p class="progress__item-percent p-absolute">0%</p>
+            </div>
+          </div>
+          <div class="progress" id="progress_3" data-percent="70">
+            <div class="progress__item d-flex">
+              <h4>JavaScript</h4>
+              <div Class="progress__item-bar p-absolute">
+                <div class="progress__item-progressing"></div>
+              </div>
+              <p class="progress__item-percent p-absolute">0%</p>
+            </div>
+          </div>
+          <div class="progress" id="progress_4" data-percent="60">
+            <div class="progress__item d-flex">
+              <h4>PHP</h4>
+              <div Class="progress__item-bar p-absolute">
+                <div class="progress__item-progressing"></div>
+              </div>
+              <p class="progress__item-percent p-absolute">0%</p>
+            </div>
+          </div>
+          <div class="progress" id="progress_5" data-percent="50">
+            <div class="progress__item d-flex">
+              <h4>GIT</h4>
+              <div Class="progress__item-bar p-absolute">
+                <div class="progress__item-progressing"></div>
+              </div>
+              <p class="progress__item-percent p-absolute">0%</p>
+            </div>
+          </div>
+          <div class="progress" id="progress_6" data-percent="50">
+            <div class="progress__item d-flex">
+              <h4>MySQL</h4>
+              <div Class="progress__item-bar p-absolute">
+                <div class="progress__item-progressing"></div>
+              </div>
+              <p class="progress__item-percent p-absolute">0%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="proyectos container py-3" id="proyectos">
+      <h2 class="text-center">Proyectos</h2>
+      <nav class="menu-projects p-relative">
+        <ul class="d-flex jc-center f-wrap">
+          <li class="m-1">
+            <button class="btn btn-secondary w-120 jc-center align-center active"
+              onclick="javascript:filterProjectsByCateg('Todos');"><span>Todos</span></button>
+          </li>
+          <li class="m-1">
+            <button class="btn btn-secondary w-120 jc-center align-center"
+              onclick="javascript:filterProjectsByCateg('Maquetaciones');"><span>Maquetaciones</span></button>
+          </li>
+          <li class="m-1">
+            <button class="btn btn-secondary w-120 jc-center align-center"
+              onclick="javascript:filterProjectsByCateg('Bootstrap');"><span>Bootstrap</span></button>
+          </li>
+          <li class="m-1">
+            <button class="btn btn-secondary w-120 jc-center align-center"
+              onclick="javascript:filterProjectsByCateg('PHP');"><span>PHP</span></button>
+          </li>
         </ul>
+      </nav>
+      <div class="d-grid divProjects" id="divProjects"></div>
+      <div class="d-flex jc-center f-wrap " id="btn-projects">
+        <button class="btn btn-primary m-2 w-200" id="btnShowMore"><span>Mostrar más </span></button>
+        <button class="btn btn-secondary m-2 w-200" id="btnShowLess"><span>Mostrar menos</span></button>
       </div>
-      <hr>
-      <div class="d-flex jc-end" onclick="javascript:closeModal()">
-        <button class="btn btn-primary"><span>Cerrar  </span></button>
+    </section>
+    <section class="experiencia container py-3" id="experiencia">
+      <h2 class="text-center">Experiencia </h2>
+      <div class="experiencia__item d-flex jc-center align-center f-wrap">
+        <div class="experiencia__date">
+          <h3>Soporte Técnico </h3>
+          <p>01 Nov 2018 ~ 10 Dic 2018</p>
+        </div>
+        <div class="experiencia__content">
+          <h3>Calvo Conservas S.A de C.V</h3>
+          <p><strong>Prácticas profesionales</strong> realizando actividades como mantenimiento preventivo en
+            computadoras, instalación de sistemas operativos y automatización de procesos en excel.</p>
+        </div>
       </div>
+      <div class="experiencia__item d-flex jc-center align-center f-wrap">
+        <div class="experiencia__content">
+          <h3>Instituciones Públicas De Educación En La Zona Oriental De El Salvador</h3>
+          <p><strong>Proyección Social</strong> realizando mantenimiento en computadoras de las instituciones públicas
+            de educación en la zona oriental de El Salvador..</p>
+        </div>
+        <div class="experiencia__date">
+          <h3>Soporte Técnico </h3>
+          <p>07 Jun 2017 ~ 07 Jul 2017</p>
+        </div>
+      </div>
+    </section>
+    <section class="certificados container py-3" id="certificados">
+      <h2 class="text-center">Certificados</h2>
+      <div class="d-grid" id="divCertificates">
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3222fd4b-97b2-4671-822d-7a1311994dde"
+          data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+    </section>
+    <section class="contactar" id="contactar">
+      <footer class="container py-3">
+        <h2 class="text-center">Contactar</h2>
+        <div class="d-flex">
+          <div class="contactar__information p-relative">
+            <h3>Repositorios </h3>
+            <div class="d-flex contactar__link">
+              <div><i class="fab fa-github"></i></div>
+              <div>
+                <h4>GitHub</h4><a class="link" href="https://github.com/MarcosRubi" rel="noopener noreferrer"
+                  target="_blank">Visitar </a>
+              </div>
+            </div>
+            <div class="d-flex contactar__link">
+              <div><i class="fa fa-code"></i></div>
+              <div>
+                <h4>Frontend Mentor</h4><a class="link" href="https://www.frontendmentor.io/profile/MarcosRubi"
+                  rel="noopener noreferrer" target="_blank">Visitar </a>
+              </div>
+            </div>
+            <div class="d-flex contactar__link">
+              <div><i class="fa fa-codepen"></i></div>
+              <div>
+                <h4>Codepen</h4><a class="link" href="https://codepen.io/Marcos_Rubi" rel="noopener noreferrer"
+                  target="_blank">Visitar </a>
+              </div>
+            </div>
+          </div>
+          <div class="contactar__social p-relative">
+            <h3>Redes sociales</h3>
+            <ul>
+              <li><a class="link" href="https://www.linkedin.com/in/marcos-rubi/" rel="noopener noreferrer"
+                  target="_blank"><i class="fab fa-linkedin-in">
+                    <label>LinkedIn</label></i></a></li>
+              <li><a class="link" href="https://www.facebook.com/MarcosRubi07" rel="noopener noreferrer"
+                  target="_blank"><i class="fa fa-facebook-f">
+                    <label>Facebook</label></i></a></li>
+              <li><a class="link" href="https://www.instagram.com/marcos_rubi_07/" rel="noopener noreferrer"
+                  target="_blank"><i class="fa fa-instagram">
+                    <label>Instagram</label></i></a></li>
+              <li><a class="link" href="https://twitter.com/Fuhrer_RD" rel="noopener noreferrer" target="_blank"><i
+                    class="fa fa-twitter">
+                    <label>Twitter</label></i></a></li>
+            </ul>
+          </div>
+          <div class="contactar__form p-relative">
+            <h3>Enviar correo</h3>
+            <form action="https://formsubmit.io/send/danielhernandez9980@gmail.com" id="formContact">
+              <div class="input-group">
+                <input type="text" name="txtNombre" id="txtNombre" required=""><span><i class="fa fa-user"></i></span>
+                <label for="txtName">Nombre </label>
+              </div>
+              <div class="input-group">
+                <input type="email" name="txtEmail" id="txtEmail" required=""><span><i
+                    class="fa fa-envelope"></i></span>
+                <label for="txtEmail">Email </label>
+              </div>
+              <div class="input-group">
+                <textarea name="txtMensaje" id="txtMessage" required=""></textarea><span><i
+                    class="fa fa-comment"></i></span>
+                <label for="txtMessage">Mensaje </label>
+              </div>
+              <button class="btn btn-primary w-200 jc-center align-center" type="submit"><span>Enviar
+                  mensaje</span></button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
+  <div class="modal text-center container" id="modal-project">
+    <div class="d-flex jc-end" onclick="javascript:closeModal()">
+      <button class="btn btn-secondary"><span>X</span></button>
     </div>
-    <div class="modal container p-relative" id="modal-certificate">
-      <div class="d-flex jc-end" onclick="javascript:closeModal()">
-        <button class="btn btn-secondary"><span>X</span></button>
+    <hr>
+    <div class="modal__content">
+      <h2> </h2>
+      <p id="description"> </p>
+      <div class="d-flex jc-center"><img src="images/projects/bg_charity.webp"
+          alt="Portada del proyecto Charity creado por Marcos Rubí"></div>
+      <div class="d-flex jc-center f-wrap"><a class="btn btn-primary w-200 jc-center align-center m-1" href="#"
+          target="_blank" id="btnUrlCode" onclick="javascript:closeModal()"><span>Ver Código </span></a><a
+          class="btn btn-secondary w-200 jc-center align-center m-1" href="#" target="_blank" id="btnUrlDemo"
+          onclick="javascript:closeModal()"><span>Ver Demo </span></a></div>
+      <div id="modal__content--dificulties">
+        <h4>Principales dificultades en su elaboración.</h4>
+        <p id="dificulties"></p>
       </div>
-      <div class="img p-relative"><img src="" alt="Certificado de Marcos Rubí">
-        <button class="p-absolute arrow arrow-left" data-id=""><i class="fas fa-chevron-left"></i></button>
-        <button class="p-absolute arrow arrow-right" data-id=""><i class="fas fa-chevron-right"></i></button>
+      <div id="modal__content--learning">
+        <h4>Aprendizaje obtenido </h4>
+        <p id="learning"> </p>
       </div>
+      <ul>
+        <li><strong>Tiempo de elaboración: </strong> <label id="date"></label> </li>
+        <li><strong>Tecnología empleada: </strong><label id="languages"></label></li>
+      </ul>
     </div>
-    <div id="script"></div>
-    <script src="js/scripts.min.js"> </script>
-  </body>
+    <hr>
+    <div class="d-flex jc-end" onclick="javascript:closeModal()">
+      <button class="btn btn-primary"><span>Cerrar </span></button>
+    </div>
+  </div>
+  <div class="modal container p-relative" id="modal-certificate">
+    <div class="d-flex jc-end" onclick="javascript:closeModal()">
+      <button class="btn btn-secondary"><span>X</span></button>
+    </div>
+    <div class="img p-relative"><img src="" alt="Certificado de Marcos Rubí">
+      <button class="p-absolute arrow arrow-left" data-id=""><i class="fas fa-chevron-left"></i></button>
+      <button class="p-absolute arrow arrow-right" data-id=""><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+  <div id="script"></div>
+  <script src="js/scripts.min.js"> </script>
+</body>
+
 </html>

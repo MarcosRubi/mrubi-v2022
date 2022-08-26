@@ -59,6 +59,33 @@ let dataProjects = [
     categ: "Maquetaciones",
   },
   {
+    title: "Time tracking dashboard",
+    description:
+      "Desafio de <a href='https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw' target='_blank'>Frontend Mentor</a>",
+    image: "bg_time-tracking-dashboard.webp",
+    dificulties: "",
+    learning: "Consumir datos de un archivo .json",
+    urlCode: "https://github.com/MarcosRubi/Time-tracking-dashboard",
+    urlDemo: "https://marcosrubi.github.io/Time-tracking-dashboard/",
+    date: "25 de Agosto del 2022 ~ 25 de Agosto del 2022",
+    languages: "HTML, CSS & JavaScript",
+    categ: "Maquetaciones",
+  },
+  {
+    title: "Lista de Tareas",
+    description: "Plantilla para agendar tareas",
+    dificulties:
+      "Implementar AJAX con PHP. Primera vez que lo realizaba por mi cuenta, anteriormente solo en proyectos de la universidad lo había realizado.",
+    learning:
+      "Realizar un CRUD con PHP usando AJAX para realizar las acciones sin recargar la página.",
+    urlCode: "https://github.com/MarcosRubi/ListaTareas",
+    urlDemo: "https://listar-tareas.herokuapp.com/#",
+    date: "03 de Enero del 2021 ~ 02 de Febrero del 2021",
+    image: "bg_listartareas.webp",
+    languages: "HTML, CSS, JavaScript, PHP, AJAX & MySQL",
+    categ: "PHP",
+  },
+  {
     title: "Inveto",
     description: "Plantilla para una web de cursos financieros",
     dificulties:
@@ -85,20 +112,7 @@ let dataProjects = [
     languages: "HTML, CSS & JavaScript",
     categ: "Maquetaciones",
   },
-  {
-    title: "Lista de Tareas",
-    description: "Plantilla para agendar tareas",
-    dificulties:
-      "Implementar AJAX con PHP. Primera vez que lo realizaba por mi cuenta, anteriormente solo en proyectos de la universidad lo había realizado.",
-    learning:
-      "Realizar un CRUD con PHP usando AJAX para realizar las acciones sin recargar la página.",
-    urlCode: "https://github.com/MarcosRubi/ListaTareas",
-    urlDemo: "https://listar-tareas.herokuapp.com/#",
-    date: "03 de Enero del 2021 ~ 02 de Febrero del 2021",
-    image: "bg_listartareas.webp",
-    languages: "HTML, CSS, JavaScript, PHP, AJAX & MySQL",
-    categ: "PHP",
-  },
+  
   {
     title: "StudyInk",
     description: "Plantilla para una web de educación",
@@ -114,9 +128,12 @@ let dataProjects = [
   },
   {
     title: "Interactive card details form",
-    description: "Desafio de <a href='https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw' target='_blank'>Frontend Mentor</a> ",
-    dificulties:"Agregar espacios en blanco cada 4 dígitos en el número de tarjeta.",
-    learning:"Usar la librería <a href='https://nosir.github.io/cleave.js/' target='_blank'>Cleave</a> para el formateo de los inputs.",
+    description:
+      "Desafio de <a href='https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw' target='_blank'>Frontend Mentor</a> ",
+    dificulties:
+      "Agregar espacios en blanco cada 4 dígitos en el número de tarjeta.",
+    learning:
+      "Usar la librería <a href='https://nosir.github.io/cleave.js/' target='_blank'>Cleave</a> para el formateo de los inputs.",
     urlCode: "https://github.com/MarcosRubi/Interactive-card-details-form",
     urlDemo: "https://marcosrubi.github.io/Interactive-card-details-form/",
     date: "20 de Agosto del 2022 ~ 20 de Agosto del 2022",
@@ -277,26 +294,25 @@ function openModalProject(id) {
   image.src = `images/projects/${data[0].image}`;
   languages.innerHTML = data[0].languages;
   btnUrlCode.setAttribute("href", data[0].urlCode);
-  if (data[0].urlDemo != "") {
-    btnUrlDemo.setAttribute("href", data[0].urlDemo);
-    btnUrlDemo.classList.contains("not-allowed")
-      ? btnUrlDemo.classList.remove("not-allowed")
-      : "";
-  } else {
-    btnUrlDemo.classList.add("not-allowed");
-    btnUrlDemo.removeAttribute("href");
-  }
-  data[0].dificulties != ""
-    ? (document.getElementById("modal__content--info").style.display =
-        "initial")
-    : (document.getElementById("modal__content--info").style.display = "none");
-
+  btnUrlDemo.setAttribute("href", data[0].urlDemo);
   dificulties.innerHTML = data[0].dificulties;
   learning.innerHTML = data[0].learning;
   date.innerHTML = data[0].date;
 
   modalProject.classList.toggle("show");
   document.querySelector("#effect-blur").classList.toggle("blur");
+
+  data[0].dificulties == ""
+    ? (document.getElementById("modal__content--dificulties").style.display =
+        "none")
+    : (document.getElementById("modal__content--dificulties").style.display =
+        "initial");
+
+  data[0].learning == ""
+    ? (document.getElementById("modal__content--learning").style.display =
+        "none")
+    : (document.getElementById("modal__content--learning").style.display =
+        "initial");
 }
 function closeModal() {
   divModal.forEach((element) => element.classList.remove("show"));
