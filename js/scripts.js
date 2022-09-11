@@ -33,6 +33,19 @@ let dataProjects = [
     categ: "PHP",
   },
   {
+    title: "Manage landing page",
+    description:
+      "Desafio de <a href='https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5' target='_blank'>Frontend Mentor</a>",
+    image: "bg_manage-landing-page.webp",
+    dificulties: "",
+    learning: "Este es mi segundo proyecto realizado usando <a href='https://reactjs.org/' target='_blank'>React</a> y con este proyecto aprendí a usar <a href='https://www.w3schools.com/react/react_useref.asp' target='_blank'>useRef</a> y <a href='https://appatico.com/detectar-elemento-con-intersection-observer-en-react/' target='_blank'>la API de observer</a> con React.",
+    urlCode: "https://github.com/MarcosRubi/Manage-landing-page",
+    urlDemo: "https://marcosrubi.github.io/Manage-landing-page/",
+    date: "09 de Septiembre del 2022 ~ 10 de Septiembre del 2022",
+    languages: "HTML, CSS & JavaScript usando <span><strong>React</strong></span>",
+    categ: "Maquetaciones",
+  },
+  {
     title: "Crowdfunding product page",
     description:
       "Desafio de <a href='https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR' target='_blank'>Frontend Mentor</a>",
@@ -52,8 +65,10 @@ let dataProjects = [
     image: "bg_social-media-dashboard.webp",
     dificulties: "",
     learning: "",
-    urlCode: "https://github.com/MarcosRubi/Social-media-dashboard-with-theme-switcher",
-    urlDemo: "https://marcosrubi.github.io/Social-media-dashboard-with-theme-switcher/",
+    urlCode:
+      "https://github.com/MarcosRubi/Social-media-dashboard-with-theme-switcher",
+    urlDemo:
+      "https://marcosrubi.github.io/Social-media-dashboard-with-theme-switcher/",
     date: "26 de Agosto del 2022 ~ 26 de Agosto del 2022",
     languages: "HTML, CSS & JavaScript",
     categ: "Maquetaciones",
@@ -125,7 +140,7 @@ let dataProjects = [
     languages: "HTML, CSS & JavaScript",
     categ: "Maquetaciones",
   },
-  
+
   {
     title: "StudyInk",
     description: "Plantilla para una web de educación",
@@ -203,6 +218,7 @@ let dataCertificates = [
   "master-css",
   "master-js",
 ];
+
 function themeDark(isChangeTheme = false) {
   if (isChangeTheme) {
     localStorage.getItem("isDark") == "true"
@@ -419,7 +435,7 @@ function getAbsolutePath() {
       ((loc.pathname + loc.search + loc.hash).length - pathName.length)
   );
 }
-window.addEventListener("load", () => {
+function asyncToLoad() {
   localStorage.getItem("isDark") == null
     ? localStorage.setItem("isDark", false)
     : "";
@@ -431,6 +447,22 @@ window.addEventListener("load", () => {
     ? localStorage.setItem("isActiveContrast", false)
     : "";
 
+  //PREFENCIAS DEL SISTEMA OPERATIVO - SI ES DARK SE ACTIVA AUTOMATICAMENTE EL MODO OSCURO
+  const userPrefersDark =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+  userPrefersDark ? localStorage.setItem("isDark", true) : "";
+
+  //OCULTAR MENSAJE DE SELECCIONAR MODO DÍA/NOCHE
+  setTimeout(() => {
+    messageToggle.classList.add("hide");
+  }, 3000);
+}
+asyncToLoad();
+themeDark();
+themeContrast();
+
+window.addEventListener("load", () => {
   let btnShowMore = document.getElementById("btnShowMore");
   let btnShowLess = document.getElementById("btnShowLess");
   let menuProjectsItems = document.querySelectorAll("nav li .btn");
@@ -483,8 +515,6 @@ window.addEventListener("load", () => {
     window.scrollTo(0, 0);
   });
 
-  themeDark();
-  themeContrast();
   changeTheme(localStorage.getItem("theme"));
   listAllProjects();
   listAllCertificates();
@@ -572,9 +602,4 @@ window.addEventListener("load", () => {
   observerFromMenu.observe(divExperience);
   observerFromMenu.observe(divCertificados);
   observerFromMenu.observe(divContactar);
-
-  //HIDE TITLE OF ACTIVE DARK MODE
-  setTimeout(() => {
-    messageToggle.classList.add("hide");
-  }, 3000);
 });
