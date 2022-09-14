@@ -24,7 +24,7 @@ let dataProjects = [
     dificulties:
       "La estructura de archivos ya que es el primer proyecto complejo, dentro de lo cabe que realizo, implementando un sistema de inicio de sesión, registro, crear publicaciones, buscar usuarios, añadir fotos a favoritos, editar usuario, eliminar publicaciones, entre otros funcionamientos. ",
     learning:
-      "Práctica usando AJAX con PHP y la Programación Orientada a Objetos, aprendí a usar las librerías de <a href='https://github.com/vlucas/phpdotenv' target='_blank'>Dotenv</a> para variables de entorno y <a href='https://github.com/PHPMailer/PHPMailer' target='_blank'>PHPMailer</a>  para el envío de emails",
+      "Práctica usando AJAX con PHP y la Programación Orientada a Objetos, aprendí a usar las librerías de <a href='https://github.com/vlucas/phpdotenv' target='_blank'>Dotenv</a> para variables de entorno y <a href='https://github.com/PHPMailer/PHPMailer' target='_blank'>PHPMailer</a>  para el envío de emails.",
     urlCode: "https://github.com/MarcosRubi/pintelog",
     urlDemo: "https://pintelog-app.000webhostapp.com/",
     date: "11 de Junio del 2022 ~ 07 de Julio del 2022",
@@ -43,7 +43,7 @@ let dataProjects = [
     urlDemo: "https://marcosrubi.github.io/Manage-landing-page/",
     date: "09 de Septiembre del 2022 ~ 10 de Septiembre del 2022",
     languages: "HTML, CSS & JavaScript usando <span><strong>React</strong></span>",
-    categ: "Maquetaciones",
+    categ: "React",
   },
   {
     title: "Crowdfunding product page",
@@ -57,6 +57,21 @@ let dataProjects = [
     date: "14 de Agosto del 2022 ~ 15 de Agosto del 2022",
     languages: "HTML, CSS & JavaScript",
     categ: "Maquetaciones",
+  },
+  {
+    title: "Tip calculator app",
+    description:
+      "Desafio de <a href='https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX' target='_blank'>Frontend Mentor</a>",
+    image: "bg_calculator.webp",
+    dificulties: "",
+    learning: "Práctica con el <a href='https://es.reactjs.org/docs/hooks-effect.html' target='_blank'>useEffect</a> para actualizar los resultados con los nuevos datos del formulario",
+    urlCode:
+      "https://github.com/MarcosRubi/Tip-calculator-app",
+    urlDemo:
+      "https://marcosrubi.github.io/Tip-calculator-app/",
+    date: "13 de Septiembre del 2022 ~ 14 de Septiembre del 2022",
+    languages: "HTML, CSS & JavaScript usando <span><strong>React</strong></span>",
+    categ: "React",
   },
   {
     title: "Social media dashboard with theme switcher",
@@ -99,6 +114,34 @@ let dataProjects = [
     image: "bg_listartareas.webp",
     languages: "HTML, CSS, JavaScript, PHP, AJAX & MySQL",
     categ: "PHP",
+  },
+  {
+    title: "Advice generator app",
+    description:
+      "Desafio de <a href='https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db' target='_blank'>Frontend Mentor</a> usando una API",
+    image: "bg_advice.webp",
+    dificulties: "",
+    learning: "Consumo de API con <span>Fetch y React</span>, también conociendo el framework de <a href='https://tailwindcss.com/' target='_blank'>tailwind</a> para dar estilos",
+    urlCode:
+      "https://github.com/MarcosRubi/Advice-generator-app-with-react-and-tailwind",
+    urlDemo:
+      "https://marcosrubi.github.io/Advice-generator-app-with-react-and-tailwind/",
+    date: "07 de Septiembre del 2022 ~ 08 de Septiembre del 2022",
+    languages: "HTML, CSS & JavaScript usando <span><strong>React</strong></span>",
+    categ: "React",
+  },
+  {
+    title: "Clipboard landing page",
+    description:
+      "Desafio de <a href='https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9' target='_blank'>Frontend Mentor</a>",
+    image: "bg_clipboard.webp",
+    dificulties: "",
+    learning: "",
+    urlCode: "https://github.com/MarcosRubi/Clipboard-landing-page",
+    urlDemo: "https://marcosrubi.github.io/Clipboard-landing-page/",
+    date: "13 de Septiembre del 2022 ~ 14 de Septiembre del 2022",
+    languages: "HTML, CSS & JavaScript",
+    categ: "Maquetaciones",
   },
   {
     title: "Fylo dark theme landing page",
@@ -152,7 +195,7 @@ let dataProjects = [
     urlDemo: "https://study-ink.vercel.app/",
     date: "07 de Noviembre del 2020 ~ 31 de Diciembre del 2020",
     languages: "HTML, CSS con Bootstrap & JavaScript",
-    categ: "Bootstrap",
+    categ: "Maquetaciones",
   },
   {
     title: "Interactive card details form",
@@ -181,7 +224,7 @@ let dataProjects = [
     date: "15 de Noviembre del 2020 ~ 31 de Diciembre del 2020",
     image: "bg_techgear.webp",
     languages: "HTML, CSS con Bootstrap & JavaScript",
-    categ: "Bootstrap",
+    categ: "Maquetaciones",
   },
   {
     title: "Portafolio",
@@ -436,8 +479,11 @@ function getAbsolutePath() {
   );
 }
 function asyncToLoad() {
-  localStorage.getItem("isDark") == null
-    ? localStorage.setItem("isDark", false)
+  //PREFENCIAS DEL SISTEMA OPERATIVO - SI ES DARK SE ACTIVA AUTOMATICAMENTE EL MODO OSCURO
+  const userPrefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  localStorage.getItem("isDark") == null && userPrefersDark
+    ? localStorage.setItem("isDark", true)
     : "";
   localStorage.getItem("theme") == null
     ? localStorage.setItem("theme", "default")
@@ -447,11 +493,6 @@ function asyncToLoad() {
     ? localStorage.setItem("isActiveContrast", false)
     : "";
 
-  //PREFENCIAS DEL SISTEMA OPERATIVO - SI ES DARK SE ACTIVA AUTOMATICAMENTE EL MODO OSCURO
-  const userPrefersDark =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  userPrefersDark ? localStorage.setItem("isDark", true) : "";
 
   //OCULTAR MENSAJE DE SELECCIONAR MODO DÍA/NOCHE
   setTimeout(() => {
