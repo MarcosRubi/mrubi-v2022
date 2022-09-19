@@ -116,6 +116,21 @@ let dataProjects = [
     categ: "PHP",
   },
   {
+    title: "Job listings with filtering",
+    description:
+      "Desafio de <a href='https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt' target='_blank'>Frontend Mentor</a>",
+    image: "bg_Job-listings-with-filtering.webp",
+    dificulties: "",
+    learning: "",
+    urlCode:
+      "https://github.com/MarcosRubi/Job-listings-with-filtering",
+    urlDemo:
+      "https://marcosrubi.github.io/Job-listings-with-filtering/",
+    date: "16 de Septiembre del 2022 ~ 17 de Septiembre del 2022",
+    languages: "HTML, CSS & JavaScript usando <span><strong>React</strong></span>",
+    categ: "React",
+  },
+  {
     title: "Advice generator app",
     description:
       "Desafio de <a href='https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db' target='_blank'>Frontend Mentor</a> usando una API",
@@ -240,19 +255,7 @@ let dataProjects = [
     languages: "HTML, CSS & JavaScript",
     categ: "Maquetaciones",
   },
-  {
-    title: "NFT preview card component",
-    description:
-      "Desafio de <a href='https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U' target='_blank'>Frontend Mentor</a>",
-    image: "bg_nft.webp",
-    dificulties: "",
-    learning: "",
-    urlCode: "https://github.com/MarcosRubi/NFT-preview-card-component",
-    urlDemo: "https://marcosrubi.github.io/NFT-preview-card-component/",
-    date: "11 de Agosto del 2022 ~ 11 de Agosto del 2022",
-    languages: "HTML & CSS con SCSS",
-    categ: "Maquetaciones",
-  },
+  
 ];
 let dataCertificates = [
   "html",
